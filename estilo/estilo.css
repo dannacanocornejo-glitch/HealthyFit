@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding:0
+}
+/*INDEX MENU*/
+.pagina{
+    width: 100%;
+}
+nav{
+    background-color: #153667;
+    width: 100%;
+    min-height: 100px;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    align-items: center;
+}
+nav img{
+    width: 65px;
+}
+
+.enlaces-menu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Outfit", sans-serif;
+}
+.enlaces-menu a{
+    color: white;
+    text-decoration: none;
+}
+.enlaces-menu a:hover{
+    color: darkgray;
+}
+
+nav button{
+    margin-left: 80%;
+    background-color: rgb(165, 243, 07);
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    transform: scale(1.05);
+}
+nav button:hover{
+    background-color: rgb(178, 255, 71) ;
+}
+iframe{
+    width: 100%;
+    height: 100vh;
+    border: none;
+}
+
+/*AQUÍ PERSONALIZO INICIO*/
+.portada{
+    min-height: calc(150vh);
+    background-image: url("../imagenes/portada.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+.logo_portada{
+    position: absolute;
+    width: 150px;
+    left: 80%;
+}
+.texto-portada{
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-size: 30px;
+    padding: 20px;
+    
+}
+h1{
+    font-family: "Outfit", sans-serif;
+    color: white;
+    font-size: 60px;
+    padding: 20px;
+}
+h2{
+    color: greenyellow ;
+    font-size: 80px;
+    font-family: "Outfit", sans-serif;
+    padding: 20px;
+}
+.linea-verde1{
+    color: greenyellow;
+}
+.descripcion{
+    color: white;
+    font-family: "Outfit", sans-serif;
+    padding: 20px;
+}
+.boton-principal{
+    background-color: yellowgreen;
+    padding: 15px 35px;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    
+}
+.boton-principal:hover{
+    background-color:rgb(178, 255, 171);
+    cursor: pointer;
+}
+.productos-destacados{
+    background-color: rgb(255, 255, 255, 0.65);
+    width: 60%;
+    border-radius: 30px;
+    padding: 20px;
+}
+.encabezado-productos{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Outfit", sans-serif;
+}
+.linea-verde2{
+    color: greenyellow;
+}
+.ver-todo{
+    color: black;
+    text-decoration: none;
+}
+.ver-todo:hover{
+    color: white;
+}
+h3{
+    font-family: "Outfit", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 10px;
+}
+.productos-tarjetas{
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+.tarjeta{
+    background-color: #f6f0e5;
+    width: 180px;
+    padding: 5px;
+    border-radius: 10%;
+}
+.tarjeta:hover{
+    background-color: rgb(75, 75, 75);
+}
+.tarjeta img{
+    width: 100%;
+    
+}
+
+footer{
+    width: 100%;
+    min-height: 100px;
+    background-color: #153667;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*===============================
+AQUÍ PERSONALIZO SECCIÓN DE ROPA
+=================================*/
+.mujer,
+.hombre,
+.articulos{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 20px;
+}
+.producto{
+    position: relative;
+    height: 300px;
+    background-color: #f5eee1;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px;
+}
+.producto:hover{
+    background-color: #777;
+    
+}
+.producto img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    
+
+}
+.producto p:nth-of-type(1){
+    color: #153667;
+    font-family: "Outfit", sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.producto p:nth-of-type(2){
+    font-family: "Outfit", sans-serif;
+    font-weight: bolder;
+}
+.pr-ant{
+    color: #888;
+    text-decoration: line-through;
+    font-weight: lighter;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.desc{
+    color: crimson;
+    margin-left: 10px;
+    font-size: medium;
+    background-color: #ffd2f1;
+
+}
+.producto button img{
+    width: 24px;
+    height: 24px;
+
+}
+.producto button{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 80px;
+    border: none;
+    
+
+}
+.producto button:hover{
+    background-color: #777;
+}
+.seccion{
+    font-size: x-large;
+    font-family: "Outfit", sans-serif;
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+#color1_prod1{
+    color: #153667;
+    font-size: 50px;
+}
+#color2_prod1{
+    color: greenyellow;
+    font-size: 50px;
+}
+#color3_prod1{
+    color: rgb(172, 47, 255);
+    font-size: 50px;
+}
+#color1_prod2{
+    color: #153667;
+    font-size: 50px;
+}
+#color2_prod2{
+    color: rgb(255, 68, 102);
+    font-size: 50px;
+}
+
+#color3_prod2{
+    color: rgb(251, 190, 93);
+    font-size: 50px;
+}
+
+#color1_prod3{
+    color: #9ab6e1;
+    font-size: 50px;
+}
+
+#color2_prod3{
+    color: rgb(255, 224, 47);
+    font-size: 50px;
+}
+#color3_prod3{
+    color: rgb(255, 47, 47);
+    font-size: 50px;
+}
+
+
+#color1_prod4{
+    color: #bb218d;
+    font-size: 50px;
+}
+
+#color2_prod4{
+    color: rgb(47, 255, 99);
+    font-size: 50px;
+}
+#color3_prod4{
+    color: rgb(172, 19, 19);
+    font-size: 50px;
+}
+
+
+#color1_prod5{
+    color: #bb218d;
+    font-size: 50px;
+}
+
+#color2_prod5{
+    color: rgb(255, 172, 47);
+    font-size: 50px;
+}
+#color3_prod5{
+    color: rgb(19, 162, 172);
+    font-size: 50px;
+}
+
+
+#color1_prod6{
+    color: #2152bb;
+    font-size: 50px;
+}
+
+#color2_prod6{
+    color: rgb(139, 223, 160);
+    font-size: 50px;
+}
+#color3_prod6{
+    color: rgb(170, 172, 19);
+    font-size: 50px;
+}
+#color4_prod6{
+    color: rgb(247, 155, 155);
+    font-size: 50px;
+}
+
+/*===============================
+AQUÍ PERSONALIZO TIPS
+=================================*/
+.cont_tips{
+    background-color: #fcfcf3;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    font-family: "Outfit", sans-serif;
+    margin-bottom: 500px;
+    
+}
+
+.cont_tips img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+.metodo div:nth-of-type(2) img{
+    max-width: 200px;
+}
+.cont_tips section div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.cont_tips section:nth-child(2) div:first-child img{
+    max-width: 200px;
+    margin-bottom: 50px;
+}
+.cont_tips section:nth-child(2) div:last-child img{
+    max-width: 500px;
+}
+.cont_tips section{
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+/*===============================
+AQUÍ PERSONALIZO SEDES
+=================================*/
+.contenedor-sedes{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.mapa img{
+    width: 120%;
+    height: auto;
+}
+
+.pucallpa,
+.sede-lima,
+.sede-iquitos{
+    background-color: #f0f0f0;
+    margin-left: 10%;
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-right: 10%;
+    border-radius: 20px;
+}
+
+.sede-lima ,
+.sede-iquitos {
+    display: flex;
+}
+
+.sede-lima img,
+.sede-iquitos img{
+    max-height: 280px;
+}
+
+.pucallpa img{
+    width: 100%;
+
+}
+.pucallpa h2,
+.sede-lima h2,
+.sede-iquitos h2{
+    font-size: 24px;
+
+}
+.lista-servicios{
+    margin-left: 200px;
+    margin-bottom: 10px;
+    display:grid ;
+    grid-template-columns: 200px 200px;
+
+}
+.contenedor-sedes button{
+    border: none;
+
+    background-color: #5dcc16;
+    color: white;
+
+    padding: 5px 18px;
+
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+
+    transform: scale(1.05);
+
+}
+.contenedor-sedes button:hover{
+    background-color: #d3ffb9;
+    transform: scale(1.05);
+}
+.sede-lima .info-sede,
+.sede-iquitos .info-sede{
+    flex: 1;
+    padding: 30px;
+
+}
+/*===============================
+AQUÍ PERSONALIZO CONTACTO
+=================================*/
+.form-cont{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gap: 50px;
+    margin: 10px;
+}
+.formulario{
+    width: 100%;
+
+}
+.formulario h1{
+    color: #153667;
+    margin: 10px;
+
+}
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.formulario label{
+    font-size: 40px; 
+    font-family: "Outfit", sans-serif;
+
+}
+.formulario form > input{
+    padding: 15px;
+}
+.formulario form > textarea{
+    height: 200px;
+}
+.formulario button{
+    
+    border: none;
+
+    background-color: #5dcc16;
+    color: white;
+
+    padding: 5px 18px;
+
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2s ease;
+
+    transform: scale(1.05);
+
+}
+.formulario button:hover{
+    background-color: #d3ffb9;
+    transform: scale(1.05);
+}
+.informacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 98%;
+    gap: 20px;
+    height: 150px;
+
+}
+.corr-tel{
+    text-align: center;
+    border:1px solid #153667;
+    border-radius: 30px;
+    padding: 20px;
+
+}
+.corr-tel img{
+    width: 80px;
+}
+.direccion{
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: auto;
+    text-align: center;
+   
+
+}
+.ubi-cont{
+    border:1px solid #153667;
+    border-radius: 30px;
+    padding: 20px;
+}
+.ubi-cont img{
+width: 200px;
+
+}
+.punto-ubi{
+    max-width: 80px;
+}
+.mapa-sedes{
+    width: 100%;
+    height: 300px;
+}
